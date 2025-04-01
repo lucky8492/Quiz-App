@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body class="bg-[url('./quiz.bg1.jpg')] bg-cover text-amber-50">
+    <div id="tagName">
+     <h1 class="flex justify-center mt-40 text-6xl text-black"> THE QUIZ GAME</h1>
+    </div>
+    <!-- selection section  -->
+    <div id="mainSection">
+        <div class=" flex justify-center mt-25 ">
+            <select name="subjects" id="select1" class="border-2 border-black md:w-120 h-10 w-70 rounded-3xl cursor-pointer bg-violet-300">
+                <option value="computer">computer</option>
+                <option value="Maths">Maths</option>
+                <option value="Books">Books</option>
+                <option value="Sports">Sports</option>
+            </select>
+            </div>
+
+            <div class="flex justify-center mt-2">
+            <select name="Difficulty" id="select2" class="border-2 border-black md:w-120 h-10 w-70 rounded-3xl cursor-pointer bg-violet-300">
+                <option value="hard">Hard</option>
+                <option value="medium">medium</option>
+                <option value="easy">easy</option>
+            </select>
+          </div>
+        
+        <div class=" flex justify-center mt-3">
+            <button id="btn" class="border rounded-3xl w-20 h-9 cursor-pointer bg-orange-400 hover:bg-orange-500" type="button">Start test</button>
+        </div>
+    </div>
+    <!-- selection end -->
+
+
+
+    <!-- next part start -->
+    <div id="secondSection" class="hidden">
+     <div  class=" flex justify-center mt-40 " >
+        <div class=" border-2 border-black md:w-200 h-auto rounded-2xl  backdrop-blur-md" >
+        <div id="" class="flex justify-end mr-4 mt-3">Your score <p id="crntScore">: 0</p></div>
+        <div class="ml-5 flex"> Question No<p id="qstNo"></p></div>
+        <div id="qst" class="ml-5 mt-3"></div>
+        <div class="ml-5 mt-3"> 
+        <ul>
+            <li id="lit1" class="flex"><img id="l1_img" class="h-7 w-7 cursor-pointer" src="hgh.png"><p  id ="li1" class="cursor-default"> </p></li>
+            <li id="lit2" class="flex"><img id="l2_img" class="h-7 w-7 cursor-pointer" src="hgh.png"><p id ="li2" class="cursor-default"></p></li>
+            <li id="lit3" class="flex "><img id="l3_img" class="h-7 w-7 cursor-pointer" src="hgh.png"></i><p id ="li3" class="cursor-default"></p></li>
+            <li id="lit4" class="flex"><img id="l4_img" class="h-7 w-7 cursor-pointer" src="hgh.png"></i><p id ="li4" class="cursor-default"></p></li>
+        </ul>
+       </div>
+
+        <div class="ml-5 mt-5 mb-8 flex ">
+            <button id="end" class="border w-15 rounded-xl cursor-pointer bg-orange-400 hover:bg-orange-500" type="button">End</button>
+            <button id="next"  class="border ml-8 w-15 rounded-xl cursor-pointer bg-orange-400 hover:bg-orange-500" type="button">Next</button>
+        </div>
+
+     </div>
+     </div>
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>
